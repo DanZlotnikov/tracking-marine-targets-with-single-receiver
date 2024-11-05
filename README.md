@@ -1,4 +1,4 @@
-# Fish Navigation Project
+# Acoustic tracking of moving marine targets using a single autonomous surface receiver
 
 ## Introduction
 
