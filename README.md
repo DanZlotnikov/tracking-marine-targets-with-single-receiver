@@ -25,8 +25,8 @@ This repository contains the implementation of the methods proposed in this [stu
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/yourusername/fish-navigation.git
-   cd fish-navigation
+   git clone https://github.com/yourusername/tracking-marine-targets-with-single-receiver.git
+   cd tracking-marine-targets-with-single-receiver
    ```
 
 2. **Create a Conda Environment**
@@ -39,12 +39,6 @@ This repository contains the implementation of the methods proposed in this [stu
 
    ```bash
    conda activate Fish_Navigation
-   ```
-
-4. **Install Required Packages**
-
-   ```bash
-   pip install -r requirements.txt
    ```
 
 ## Usage
