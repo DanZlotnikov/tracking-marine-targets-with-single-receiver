@@ -1,2 +1,5 @@
 plots\
-*.csv
+.idea\
+__pycache__\
+*.yaml
+maps\
