@@ -28,7 +28,7 @@ if __name__ == "__main__":
     listener_utm = [list(from_latlon(lat, lon)[:2]) + [0] for lat, lon in listener_positions]
 
     # Calculate Distances and Time of Arrival (TOA)
-    distances = [np.linalg.norm(np.array(listener) - np.array(target_utm[:2])) for listener in listener_utm]
+    distances = [np.linalg.norm(np.array(listener) - np.array(target_utm)) for listener in listener_utm]
     toa = [distance / velocity for distance in distances]
 
     # Initial Guess for Target Position in UTM
