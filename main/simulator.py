@@ -28,6 +28,12 @@ import pickle
 project_path = args.current_path
 
 def run_single_simulator(target_location_lst, map_loc, start_path, vehicle, args, proj=None, sitl=None):
+    print(target_location_lst)
+    print(map_loc)
+    print(start_path)
+    print(vehicle)
+    print(args)
+    
     num_hyper = 0
     travel_report_lst = np.array([True, True])
     interception_lst = np.ones(len(target_location_lst))
