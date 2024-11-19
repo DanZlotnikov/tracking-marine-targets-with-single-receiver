@@ -5,7 +5,7 @@ from utils.time_utils import calculate_time_difference
 
 
 def dis(p_a, p_b):
-    print(p_a)
+    print(p_a.shape)
     return ((p_a[:, 0] - p_b[:, 0]) ** 2 +
             (p_a[:, 1] - p_b[:, 1]) ** 2 +
             (p_a[:, 2] - p_b[:, 2]) ** 2) ** 0.5
