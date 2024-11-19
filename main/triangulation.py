@@ -41,7 +41,7 @@ if __name__ == "__main__":
 
     if not failed:
         # Convert Result Back to Lat/Lon
-        estimated_latlon = to_latlon(result[0][0], result[0][1], target_utm[2], target_utm[3])
+        estimated_latlon = to_latlon(result[0][0], result[0][1], 0)
         print("Estimated Target Position (Lat/Lon):", estimated_latlon)
     else:
         print("Steepest Descent Failed")
