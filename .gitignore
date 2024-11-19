@@ -1,6 +1,7 @@
 plots\
+main\plots
 .idea\
 __pycache__\
-*.yaml
 maps\
-
+*.yaml
+*.pyc
