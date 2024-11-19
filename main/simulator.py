@@ -159,7 +159,7 @@ def run_simulation(args, target_speed, new_targer_road, map_loc, radius_lst, n_p
     for check_n_polugon in n_polugon_size_lst:
         for check_radius in radius_lst:
 
-            n_test = 10
+            n_test = 3
             xy_error_mean_lst = np.zeros(n_test)
             xy_error_rms_lst = np.zeros(n_test)
             xy_error_median_lst = np.zeros(n_test)
@@ -252,7 +252,7 @@ if __name__ == '__main__':
     new_target_road = True
     radius_lst = [8, 10, 12, 14, 16]
     n_polugon_size_lst = ['triangle_only', 3, 4, 5, 6]
-    args.tdoa_type = 'tdoa_pairs'  # 'optimization_tdoa'  # 'tdoa_pairs'
+    args.tdoa_type = 'optimization_tdoa'  # 'optimization_tdoa'  # 'tdoa_pairs'
 
     lat, lon = -35.3632596, 149.1652268
     utm_param = np.array(from_latlon(lat, lon))
