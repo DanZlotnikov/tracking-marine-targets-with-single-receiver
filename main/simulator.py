@@ -33,7 +33,7 @@ def run_single_simulator(target_location_lst, map_loc, start_path, vehicle, args
     print(start_path)
     print(vehicle)
     print(args)
-    
+    return
     num_hyper = 0
     travel_report_lst = np.array([True, True])
     interception_lst = np.ones(len(target_location_lst))
