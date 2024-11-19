@@ -9,3 +9,5 @@ maps\
 main/plots/sim2/target_path.csv
 target_position_functions/__pycache__/calculation_tdoa_optimization.cpython-39.pyc
 *.pyc
+*.pyc
+/target_position_functions/__pycache__
