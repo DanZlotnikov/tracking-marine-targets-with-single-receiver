@@ -24,15 +24,15 @@ if __name__ == "__main__":
     velocity = 343
 
     # Convert Target and Listeners to UTM
-    target_utm = from_latlon(target_lat, target_lon)
-    listener_utm = [from_latlon(lat, lon)[:2] for lat, lon in listener_positions]
+    target_utm = list(from_latlon(target_lat, target_lon))[:2] + [0]  # Add z = 0
+    listener_utm = [list(from_latlon(lat, lon)[:2]) + [0] for lat, lon in listener_positions]
 
     # Calculate Distances and Time of Arrival (TOA)
     distances = [np.linalg.norm(np.array(listener) - np.array(target_utm[:2])) for listener in listener_utm]
     toa = [distance / velocity for distance in distances]
 
     # Initial Guess for Target Position in UTM
-    initial_guess = np.array(target_utm[:2]) + np.array([10, -10])  # Example offset
+    initial_guess = np.array(target_utm) + np.array([10, -10, 0])  # Offset only in x, y; z remains 0
 
     # Call Steepest Descent
     rov_lst = np.array(listener_utm)
