@@ -1,4 +1,6 @@
 # data_output1659624344.pkl
+import sys
+sys.path.append('..')
 import pickle
 import numpy as np
 from parameters import args
